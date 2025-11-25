@@ -24,7 +24,7 @@ export default async function handler(req, res) {
     return res.status(200).json({ ok: false });
   }
 
-  // GET → renvoie la page HTML
+  // GET → renvoie la page HTML 
   res.setHeader("Content-Type", "text/html; charset=utf-8");
   res.send(`
 <!doctype html>
