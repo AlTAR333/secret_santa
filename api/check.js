@@ -13,7 +13,7 @@ export default function handler(req, res) {
   // Mots de passe en clair
   const passwords = {
     1: "Kitsu",
-    2: "F",
+    2: "F8962",
     3: "Cesar7",
     4: "Poulet"
   };
