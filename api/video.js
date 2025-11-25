@@ -24,12 +24,12 @@ export default function handler(req, res){
       box-shadow: 0 8px 20px rgba(0,0,0,0.2);
       text-align: center;
       margin-bottom: 20px;
+      margin: 0 auto;
     }
 
     .video-link {
-      display: block;
-      width: 100%;
-      padding: 14px;
+      display: inline-block;
+      padding: 14px 28px;
       margin-bottom: 20px;
       border-radius: 8px;
       border: 2px solid #00ffcc;
@@ -103,7 +103,7 @@ export default function handler(req, res){
   <a class="video-link" href="https://www.youtube.com/watch?v=MNE2387fazw" target="_blank">
   ▶ Voir la vidéo
   </a>
-  
+
   <input type="text" id="password" placeholder="">
   <br>
   <button id="checkBtn">Valider</button>
