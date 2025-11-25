@@ -31,7 +31,7 @@ export default async function handler(req, res) {
 <html lang="fr">
 <head>
 <meta charset="UTF-8">
-<title>Secret Santa Étape 1</title>
+<title>Enigle - Rhinoceros</title>
 <style>
     body {
       margin: 0;

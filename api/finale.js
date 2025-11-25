@@ -3,7 +3,7 @@ export default function handler(req, res){
 <html lang="fr">
 <head>
 <meta charset="UTF-8">
-<title>Secret Santa Étape 1</title>
+<title>Enigme - Finale</title>
 <style>
     body {
       margin: 0;
