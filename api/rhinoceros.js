@@ -43,13 +43,17 @@ export default async function handler(req, res) {
     justify-content: center;
     font-family: system-ui;
   }
-  .card {
+.card {
     width: 360px;
     padding: 28px;
     background: #000;
     border-radius: 14px;
     text-align: center;
-  }
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center; 
+}
   img {
     width: 100%;
     border-radius: 12px;
