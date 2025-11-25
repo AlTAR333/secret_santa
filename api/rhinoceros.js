@@ -90,6 +90,15 @@ export default async function handler(req, res) {
     font-size: 14px;
     color: red;
   }
+    /* Texte invisible sauf si surligné */
+    .invisible-hint {
+        color: #000000;          /* invisible sur fond noir */
+        user-select: text;       /* important pour pouvoir le surligner */
+        font-size: 14px;
+        width: 360px;
+        text-align: center;
+        white-space: pre-line;   /* pour respecter les retours à la ligne */
+    }
 </style>
 </head>
 <body>
@@ -99,6 +108,13 @@ export default async function handler(req, res) {
     <button id="check">Valider</button>
     <div class="msg" id="msg"></div>
   </main>
+
+  <div class="invisible-hint">
+  Dans le jeu aux météores infinies,
+  Et aux Anas platyrhynchos démesurés,
+  Elle est celle dont le fil bandé
+  Au dela des barrières, ôte la vie.
+  </div>
 
 <script>
   async function sendPassword() {
