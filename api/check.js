@@ -13,13 +13,13 @@ export default function handler(req, res) {
   // Mots de passe en clair
   const passwords = {
     1: "Kitsu",
-    2: "",
+    2: "F",
     3: "Cesar7",
     4: "Poulet"
   };
 
   const nextStepUrls = {
-    1: "/api/cube",
+    1: "/api/video",
     2: "/api/rhinoceros",
     3: "/api/finale",
     4: "/api/bravo"
