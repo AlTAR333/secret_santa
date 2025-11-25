@@ -94,7 +94,7 @@ export default async function handler(req, res) {
 </head>
 <body>
   <main class="card">
-    <img src="/rhinoceros.jpg" alt="rhinoceros" />
+    <img src="/rhinoceros.jpeg" alt="rhinoceros" />
     <input id="pw" type="text" autocomplete="off" />
     <button id="check">Valider</button>
     <div class="msg" id="msg"></div>
