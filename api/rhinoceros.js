@@ -111,6 +111,7 @@ export default async function handler(req, res) {
     <input id="pw" type="text" autocomplete="off" />
     <button id="check">Valider</button>
     <div class="msg" id="msg"></div>
+    
     <div class="invisible-hint">
       Ici, une seule Propriétés nous intéresse.
       Je me demande qui est l'auteur de cette image ?
@@ -120,15 +121,21 @@ export default async function handler(req, res) {
 <script>
   async function sendPassword() {
     const pw = document.getElementById("pw").value;
-    const res = await fetch("", {
+
+    // On envoie la réponse vers /api/check comme index
+    const res = await fetch("/api/check", {
       method: "POST",
       headers: {"Content-Type": "application/json"},
-      body: JSON.stringify({ password: pw })
+      body: JSON.stringify({
+        password: pw,
+        step: 2   // <<< étape 2 !
+      })
     });
+
     const data = await res.json();
 
     if (data.ok) {
-      window.location = data.next;  // redirection serveur → page cachée
+      window.location = data.nextStepUrl;
     } else {
       document.getElementById("msg").textContent = "Mot de passe incorrect";
     }
