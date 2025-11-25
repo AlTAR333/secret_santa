@@ -79,6 +79,7 @@ export default function handler(req, res){
 <body>
 
 <div class="card" id="container">
+  <a href="https://www.youtube.com/watch?v=MNE2387fazw">Video</a>
   <input type="text" id="password" placeholder="">
   <br>
   <button id="checkBtn">Valider</button>
