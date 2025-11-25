@@ -107,14 +107,11 @@ export default async function handler(req, res) {
     <input id="pw" type="text" autocomplete="off" />
     <button id="check">Valider</button>
     <div class="msg" id="msg"></div>
+    <div class="invisible-hint">
+      Ici, une seule Propriétés nous intéresse.
+      Je me demande qui est l'auteur de cette image ?
+    </div>
   </main>
-
-  <div class="invisible-hint">
-  Dans le jeu aux météores infinies,
-  Et aux Anas platyrhynchos démesurés,
-  Elle est celle dont le fil bandé
-  Au dela des barrières, ôte la vie.
-  </div>
 
 <script>
   async function sendPassword() {
