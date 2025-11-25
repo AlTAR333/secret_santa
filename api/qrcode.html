@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>Énigme — QRCode</title>
+    <style>
+      :root {
+        --bg: #000;
+        --card: #000;
+        --accent: #00ffcc;
+      }
+      html,
+      body {
+        height: 100%;
+      }
+      body {
+        margin: 0;
+        background: var(--bg);
+        color: #fff;
+        font-family: "Courier New", monospace;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
+      .card {
+        width: 520px;
+        max-width: calc(100% - 32px);
+        padding: 28px;
+        background: var(--card);
+        border-radius: 12px;
+        text-align: center;
+        box-shadow: 0 8px 30px rgba(0, 0, 0, 0.6),
+          inset 0 1px 0 rgba(255, 255, 255, 0.02);
+      }
+      .riddle {
+        color: #ddd;
+        font-size: 18px;
+        line-height: 1.6;
+        white-space: pre-line;
+      }
+    </style>
+  </head>
+  <body>
+    <main class="card">
+      <div class="riddle">
+        Chaque inconnue, à une énigme est assigné.
+        Si F est le premier, les autres ne seront qu'entiers.
+        Trouvez les quatres, et insérez la clé.
+      </div>
+    </main>
+  </body>
+</html>
