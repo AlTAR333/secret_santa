@@ -26,6 +26,27 @@ export default function handler(req, res){
       margin-bottom: 20px;
     }
 
+    .video-link {
+      display: block;
+      width: 100%;
+      padding: 14px;
+      margin-bottom: 20px;
+      border-radius: 8px;
+      border: 2px solid #00ffcc;
+      color: #00ffcc;
+      text-decoration: none;
+      font-weight: 600;
+      font-size: 18px;
+      font-family: 'Courier New', monospace;
+      box-shadow: 0 0 10px #00ffcc inset, 0 0 10px #00ffcc;
+      transition: 0.2s ease;
+    }
+    .video-link:hover {
+      background: #00ffcc;
+      color: #000000;
+      box-shadow: 0 0 20px #00ffcc inset, 0 0 20px #00ffcc;
+    }
+
     input[type=text] {
       width: 100%;
       padding: 12px;
@@ -79,7 +100,10 @@ export default function handler(req, res){
 <body>
 
 <div class="card" id="container">
-  <a href="https://www.youtube.com/watch?v=MNE2387fazw">Video</a>
+  <a class="video-link" href="https://www.youtube.com/watch?v=MNE2387fazw" target="_blank">
+  ▶ Voir la vidéo
+  </a>
+  
   <input type="text" id="password" placeholder="">
   <br>
   <button id="checkBtn">Valider</button>
