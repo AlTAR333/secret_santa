@@ -86,6 +86,12 @@ export default async function handler(req, res) {
       box-shadow: 0 0 16px #00ffcc inset, 0 0 20px #00ffcc;
     }
 
+    img {
+    width: 100%;
+    border-radius: 12px;
+    margin-bottom: 20px;
+    }
+
     .msg {
       height: 20px;
       margin-top: 10px;
@@ -108,6 +114,7 @@ export default async function handler(req, res) {
 
 <div class="card" id="container">
   <img src="/rhinoceros.jpeg" alt="rhinoceros" />
+  <br>
   <input type="text" id="password" placeholder="">
   <br>
   <button id="checkBtn">Valider</button>
@@ -141,8 +148,8 @@ async function verify(step) {
   }
 }
 
-checkBtn.addEventListener('click', ()=>verify(2));
-passwordInput.addEventListener('keyup', e => { if(e.key==='Enter') verify(2); });
+checkBtn.addEventListener('click', ()=>verify(3));
+passwordInput.addEventListener('keyup', e => { if(e.key==='Enter') verify(3); });
 </script>
 </body>
 </html>
