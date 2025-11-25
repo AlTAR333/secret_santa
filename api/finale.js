@@ -111,8 +111,8 @@ async function verify(step) {
   }
 }
 
-checkBtn.addEventListener('click', ()=>verify(3));
-passwordInput.addEventListener('keyup', e => { if(e.key==='Enter') verify(3); });
+checkBtn.addEventListener('click', ()=>verify(4));
+passwordInput.addEventListener('keyup', e => { if(e.key==='Enter') verify(4); });
 </script>
 </body>
 </html>
