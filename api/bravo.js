@@ -61,7 +61,7 @@ export default function handler(req, res){
   </p>
 
   <!-- PLACEHOLDER POUR L'IMAGE FINALE -->
-  <img src="cadeau.jpg" alt="Cadeau" class="gift">
+  <img src="rubikscube.jpg" alt="Cadeau" class="gift">
 </div>
 
 </body>
